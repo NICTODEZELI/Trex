@@ -110,8 +110,9 @@ function draw() {
     gupodenuvren.setLifetimeEach(-1)
     gupodecaqui.setLifetimeEach(-1)
 
-    if (mousePressedOver(reset)){
+    if (mousePressedOver(reset)||touches.length > 0){
       Resett();
+      touches = []
     }
   }
   
